@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body 
+{
+    color: rgb(180, 180, 180);
+    background-image: linear-gradient(to bottom, rgb(10, 10, 11), rgb(5, 5, 10));
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+header{
+    color: white;
+    background-color: black;
+}
+
+
+.nome{
+    position: absolute;
+    width: 360px;
+    font-family: "Dancing Script", serif;
+    left: 50%;
+    padding-bottom: 5px;
+    font-size: 4.5em;
+    border-radius: 10px;
+    transform: translate(-50%);
+}
+
+.letra{
+    font-family: "Playwrite VN", serif;
+    color: rgba(48, 45, 45, 0.808);
+    font-size: 2.8em;
+    height: 100px;
+    margin: auto;
+    width: 150px;
+}
+
+main > h2{
+    height: 30px;
+    color: white;
+    font-size: 1.3em;
+    align-content: center;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(120, 40, 100), rgb(50, 50, 100) 90%);
+}
+
+menu{
+    margin: 4px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+menu> a> div{
+    margin: 5px;
+    border-radius: 8px;
+    height: 40px;
+    width: 70px;
+    align-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.445);
+}
+menu> a{
+    text-decoration: none;
+}
+
+menu > a.branco> div{
+    color:white;
+    background-image: linear-gradient(to right, rgb(120, 40, 100), rgb(50, 50, 100) 200%);
+    
+    transition: 0.2s;
+}
+
+menu > a.branco> div:hover{
+    transform: translate(-4px, -3px);
+}
+
+menu.footer{
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+menu.footer> a> div{
+    margin-top: 50px;
+    background-color: white;
+    width: 45px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+menu.footer> a{
+    color: black;
+    text-decoration: none;
+}
+
+
+menu.footer> a> div:hover{
+    transform: translate(-3px, -3px);
+}
+
+
+nav{
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 400px;
+}
+
+nav> a> div{
+    font-size: 1.3em;
+    margin: 5px;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.589);
+    transition: .4s ease;
+}
+
+nav> a> div:hover{
+    opacity: 1;
+    color: white;
+    transform: translateY(-2%);
+    background-image: linear-gradient(to bottom, rgb(120, 40, 100), rgb(50, 50, 100) 90%);
+
+    transition: all 0.2s ease-in-out;
+}
+nav:hover > a > div:not(:hover)
+{
+    transform: scale(90%, 90%);
+    opacity: 0.7;
+
+    transition: all 0.5 ease-in-out;
+}
+
+nav> a{
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+div.modulo > p{
+    font-size: .7em;
+}
+
+footer{
+    height: 200px;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+footer> p{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}

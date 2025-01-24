@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title><link rel="stylesheet" href="../../../../estilos/styleall.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: lightsalmon;
+        }
+        
+        main{
+            height: 100vh;
+            width: 100vw;
+
+            background-color: lightgreen;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        section{
+            height: 200px;
+            width: 200px;
+            
+            background-color: lightseagreen;
+        }
+        a.volta{
+            bottom: 0;
+            position: absolute;
+            color: black;
+            width: 205px;
+            height: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            display: block;
+            text-align: center;
+            align-content: center;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.438);
+            transition: .3s ease;
+        }
+        a.volta:hover{
+            color: white;
+            background-color: blue;
+            transform: translate(-3px, -3px);
+        }
+        </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+        </section>
+        <a class="volta" href="../../../../../../index.html">Volte para a página inicial</a>
+    </main>
+</body>
+</html>

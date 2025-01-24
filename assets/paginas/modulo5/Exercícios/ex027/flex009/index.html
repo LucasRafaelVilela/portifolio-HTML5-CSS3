@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <link rel="stylesheet" href="../../../../estilos/styleall.css">
+    <style>
+        div.conteiner {
+            background-color: salmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            flex-direction: column;
+        }
+
+        div.item {
+            text-align: center;
+
+            background-color: lightblue;
+
+            border: 1px solid black;
+            align-self: center;
+            flex-basis: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">Outro conteúdo</div>
+        <div class="item">C</div>
+        <div class="item">Conteúdo um pouco mais</div>
+        <div class="item">E</div>
+        <div class="item">Conteúdo maior ainda, que vai ocupar espaço</div>
+        <div class="item">G</div>
+    </div><br>
+    <a class="volta" href="../../../../../../index.html">Volte para a página inicial</a>
+</body>
+
+</html>
