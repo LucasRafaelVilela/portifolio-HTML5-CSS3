@@ -22,7 +22,7 @@ header{
     font-size: 1.7em;
     text-align: center;
     color: white;
-    background-image: linear-gradient(to right, rgb(120, 40, 100), rgb(50, 50, 100) 90%);
+    background-image: linear-gradient(to right, rgb(16, 16, 16), #555555fd 90%);
 }
 
 header > h1{
@@ -30,11 +30,11 @@ header > h1{
 }
 
 main{
-    height: 100vh;
+    height: 98vh;
 }
 
 .conteiner{
-    padding: 20px 0px;
+    padding: 0px 0px;
     height: 100%;
     display: flex;
     gap: 50px;
@@ -44,14 +44,13 @@ main{
 }
 
 .pai{
-    height: 100vh;
+    height: 500px;
     width: 300px;
     padding: 20px;
-    perspective: 2000px;
 }
 
 .card{
-    padding-top: 100px;
+    padding-top: 10rem;
     transform-style: preserve-3d;
     background-color: blue;
     width: 100%;
@@ -70,7 +69,7 @@ main{
     background-color: rgba(0,0,0,0.811);
     border-radius: 0px 0px 10px 10px;
     box-shadow:0px 20px 50px -25px rgba(0, 115, 255, 0.925);
-    padding: 50px 25px 25px 25px;
+    padding: 20px;
     transform-style: preserve-3d;
     transition: all .3s ease-in-out;
 }
@@ -88,8 +87,9 @@ main{
 }
 
 .conteudo-card{
-    padding-top: 15px;
-    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+    font-size: 15px;
     transform: translate3d(0px, 0px, 15px);
     transition: all .3s ease-in-out;
 }
@@ -119,7 +119,7 @@ main{
     width: 60px;
     background-color: black;
     border-radius: 5px;
-    padding: 3px;
+    padding:4px;
     box-shadow: 0px 15px 60px 0px rgba(0, 115, 255, 0.925), 0px 18px 36px -18px rgba(0, 200, 255);
     transform: translate3d(0, 0, 20px);
 }
@@ -140,17 +140,60 @@ main{
     color: rgba(0, 136, 255);
 }
 
-.card2{
-    filter: hue-rotate(130deg);
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9{
+    filter: hue-rotate(-120deg);
 }
-.card3{
-    filter: hue-rotate(200deg);
+.card10,
+.card11,
+.card12{
+    filter: hue-rotate(160deg);
 }
 
-.card4{
-    filter: hue-rotate(300deg);
+.card13,
+.card14,
+.card15{
+    filter: hue-rotate(140deg);
 }
 
 div.caixa-de-conteudo > a{
+    text-decoration: none;
+}
+
+
+div.caixa-de-conteudo:hover > h1:not(:hover){
+    transform: translate3d(0, 0, 10px);
+    opacity: 0.5;
+}
+
+div.caixa-de-conteudo:hover > p:not(:hover){
+    transform: translate3d(0, 0, 10px);
+    opacity: 0.5;
+}
+
+div.caixa-de-conteudo:hover > a:not(:hover){
+    transform: translate3d(0, 0, 10px);
+    opacity: 0.5;
+}
+
+footer{
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+footer > a{
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
 }
